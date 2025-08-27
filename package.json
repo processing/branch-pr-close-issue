@@ -1,0 +1,17 @@
+{
+  "name": "branch-pr-close-issue",
+  "version": "0.1.0",
+  "description": "Github action to close linked issues on PR merging against non-default branch",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "p5.js contributors & The Processing Foundation",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "@actions/github": "^6.0.1"
+  }
+}
+

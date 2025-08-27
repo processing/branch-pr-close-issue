@@ -1,0 +1,9 @@
+name: Close issue on branch PR merge
+description: Github action to close linked issues on PR merging against non-default branch
+author: p5.js contributors & The Processing Foundation
+inputs:
+  token:
+    description: Github token
+runs:
+  using: node24
+  main: index.js
