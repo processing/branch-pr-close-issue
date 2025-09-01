@@ -4,6 +4,8 @@ author: p5.js contributors & The Processing Foundation
 inputs:
   token:
     description: Github token
+  branch:
+    description: Matches target base branch which should trigger this action
 runs:
   using: node24
   main: index.js
