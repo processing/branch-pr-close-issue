@@ -8,4 +8,4 @@ inputs:
     description: Matches target base branch which should trigger this action
 runs:
   using: node24
-  main: index.js
+  main: dist/index.js
