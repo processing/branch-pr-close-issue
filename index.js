@@ -6,10 +6,10 @@ const prBody = context.payload.pull_request.body ?? '';
 const baseBranch = context.payload.pull_request.label ?? null;
 const targetBaseBranchPattern = new RegExp(core.getInput('branch', { required: true }));
 
-if(context.payload.pull_request.merged){
+if(!context.payload.pull_request.merged){
   console.log('Pull request not merged, skipping...');
 
-}else if(targetBaseBranchPattern.test(baseBranch)){
+}else if(!targetBaseBranchPattern.test(baseBranch)){
   console.log('Not targeted base branch, skipping...');
 
 }else{
